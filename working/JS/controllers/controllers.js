@@ -1,4 +1,4 @@
-angular.module('meanie') 
+angular.module('newapplication') 
     .controller('mainCtrl', ["$scope", "$location", "$routeParams" ,
     	function ($scope, $location, $routeParams ) {   
     	 
