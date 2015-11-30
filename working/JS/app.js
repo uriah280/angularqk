@@ -1,7 +1,6 @@
 
 angular.module('newapplication', ['ngRoute', 'ngResource'])
-    .config(['$routeProvider', function($routeProvider) {
-        'use strict'; 
+    .config(['$routeProvider', function($routeProvider) { 
 
         var mainRoute = { 
 			controller	: 'mainCtrl', 
