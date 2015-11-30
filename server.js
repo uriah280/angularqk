@@ -26,6 +26,7 @@ program.use (postman.json({limit: '50mb'})); // POST support
 program.use (postman.urlencoded({ limit: '50mb', extended : true }));
 
 filesys.readdir(modeldb, function (err, files) { 
+    if (!(files && files.length)) return
 	for (var model, file, i = 0; file = files[i]; i++) {
 		model = require(modeldb + file);
 		for (var word in model.verbs) { 

@@ -1,4 +1,7 @@
 
+
+
+
 angular.module('newapplication', ['ngRoute', 'ngResource'])
     .config(['$routeProvider', function($routeProvider) { 
 
